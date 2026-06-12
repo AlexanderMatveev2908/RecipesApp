@@ -1,0 +1,71 @@
+@layer components {
+  .txt__1 {
+    @apply font-extrabold;
+    font-size: 72px;
+    line-height: 110%;
+    letter-spacing: -2px;
+  }
+
+  .txt__2 {
+    @apply font-extrabold;
+    font-size: 64px;
+    line-height: 110%;
+    letter-spacing: -2px;
+  }
+
+  .txt__3 {
+    @apply font-extrabold;
+    font-size: 56px;
+    line-height: 120%;
+    letter-spacing: -2px;
+  }
+
+  .txt__4 {
+    @apply font-extrabold;
+    font-size: 48px;
+    line-height: 120%;
+    letter-spacing: -2px;
+  }
+
+  .txt__5 {
+    @apply font-extrabold;
+    font-size: 40px;
+    line-height: 120%;
+    letter-spacing: -1px;
+  }
+
+  .txt__6 {
+    @apply font-bold;
+    font-size: 32px;
+    line-height: 130%;
+    letter-spacing: -1px;
+  }
+
+  .txt__7 {
+    @apply font-medium;
+    font-size: 24px;
+    line-height: 140%;
+    letter-spacing: -1px;
+  }
+
+  .txt__8 {
+    @apply font-bold;
+    font-size: 20px;
+    line-height: 140%;
+    letter-spacing: -1px;
+  }
+
+  .txt__9 {
+    @apply font-medium;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: -0.5px;
+  }
+
+  .txt__10 {
+    @apply font-bold;
+    font-size: 14px;
+    line-height: 150%;
+    letter-spacing: -0.5px;
+  }
+}

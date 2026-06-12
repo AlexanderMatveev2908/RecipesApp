@@ -1,3 +1,5 @@
+@use './tokens/font.scss';
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -26,7 +28,7 @@
 }
 
 * {
-  font-family: 'Sour Gummy', serif;
+  font-family: 'Nunito', serif;
 }
 
 html {
