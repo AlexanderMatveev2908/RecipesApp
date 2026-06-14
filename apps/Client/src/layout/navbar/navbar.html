@@ -1,0 +1,44 @@
+<div class="root">
+  <div class="root__title">
+    <a [routerLink]="'/'" class="title__svg">
+      <ng-container *ngComponentOutlet="SvgLogo" />
+    </a>
+
+    <span class="txt__9">Healthy Recipe Finder</span>
+  </div>
+
+  <button #btnRef (click)="toggleDrop()" class="root__burger">
+    <div class="burger__svg">
+      <ng-container *ngComponentOutlet="SvgBurger" />
+    </div>
+  </button>
+
+  <div class="root__links">
+    @for (link of linksDesktop; track $index) {
+      <a
+        [routerLink]="link.path"
+        class="links__opt txt__9"
+        [ngClass]="isCurrPath(link.path) ? 'border-b-2 border-orange__500' : ''"
+        >{{ link.label }}</a
+      >
+    }
+  </div>
+
+  <button class="root__browse">
+    <span class="txt__8">Browse Recipes</span>
+  </button>
+
+  @if (isDrop()) {
+    <div #dropRef class="root__drop">
+      @for (link of linksDesktop; track $index) {
+        <a (click)="toggleDrop()" [routerLink]="link.path" class="drop__opt txt__9">{{
+          link.label
+        }}</a>
+      }
+
+      <button class="drop__browse">
+        <span class="txt__8">Browse Recipes</span>
+      </button>
+    </div>
+  }
+</div>
