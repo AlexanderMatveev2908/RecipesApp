@@ -1,3 +1,31 @@
 .root {
-  @apply mt-[100px];
+  @apply mt-[120px] px-[16px];
+
+  .root__first {
+    @apply flex flex-col gap-[16px] justify-center items-center;
+
+    .first__slogan {
+      @apply text-start tablet:text-center;
+
+      .slogan__healthy {
+        @apply relative;
+
+        &::before {
+          @apply content-[''] absolute bottom-2 left-0 w-full h-2/5 bg-orange__500 opacity-50 rounded-[10px];
+        }
+      }
+    }
+
+    .first__explore {
+      @apply flex w-full justify-start tablet:justify-center items-center mt-[16px];
+
+      > a {
+        @apply bg-neutral__900 px-[32px] py-[16px] rounded-[10px];
+      }
+    }
+
+    .first__img {
+      @apply w-[400px] h-[400px];
+    }
+  }
 }

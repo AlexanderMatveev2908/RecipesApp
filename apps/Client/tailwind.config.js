@@ -3,6 +3,12 @@ export default {
   content: ['./src/**/*.{html,ts}'],
   theme: {
     extend: {
+      screens: {
+        mobile: '375px',
+        tablet: '768px',
+        desktop: '1440px',
+      },
+
       colors: {
         neutral__0: '#FFFFFF',
         neutral__100: '#F6F5F1',
