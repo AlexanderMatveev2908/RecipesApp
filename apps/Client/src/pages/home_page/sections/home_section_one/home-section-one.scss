@@ -8,7 +8,7 @@
       @apply relative;
 
       &::before {
-        @apply content-[''] absolute bottom-2 left-0 w-full h-2/5 bg-orange__500 opacity-50 rounded-[10px];
+        @apply content-[''] absolute bottom-4 left-0 w-full h-2/5 bg-orange__500 opacity-50 rounded-[10px];
       }
     }
   }
