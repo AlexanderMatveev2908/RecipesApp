@@ -1,0 +1,21 @@
+<div class="root">
+  <span class="txt__5">What you’ll get</span>
+
+  <div class="root__content">
+    @for (item of DataHomeSectionTwo.data; track item.id) {
+      <div class="content__item">
+        <div class="item__svg">
+          <ng-container *ngComponentOutlet="item.Svg" />
+        </div>
+
+        <div class="item__texts">
+          <span class="txt__6 text-neutral__900">{{ item.title }}</span>
+
+          <span class="txt__8 text-neutral__600">
+            {{ item.description }}
+          </span>
+        </div>
+      </div>
+    }
+  </div>
+</div>
