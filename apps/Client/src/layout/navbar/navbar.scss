@@ -1,5 +1,5 @@
 .root {
-  @apply fixed top-0 left-0 w-full h-[72px] border-b px-[16px] flex justify-between items-center z-50 bg-white;
+  @apply fixed top-0 left-0 w-full h-[72px] border-b px-[16px] flex justify-between items-center z-50 bg-neutral__200;
 
   .root__title {
     @apply h-full flex justify-start items-center gap-[8px] text-neutral__900;

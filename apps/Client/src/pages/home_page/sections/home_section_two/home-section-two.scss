@@ -1,0 +1,19 @@
+.root {
+  @apply pt-[64px] flex flex-col gap-[32px];
+
+  .root__content {
+    @apply flex flex-col gap-[24px];
+
+    .content__item {
+      @apply flex flex-col gap-[20px];
+
+      .item__svg {
+        @apply w-[60px] h-[60px];
+      }
+
+      .item__texts {
+        @apply flex flex-col gap-[12px];
+      }
+    }
+  }
+}

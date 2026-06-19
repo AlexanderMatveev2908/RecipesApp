@@ -35,6 +35,10 @@ html {
   @apply bg-[#FAF9F9];
 }
 
+body {
+  @apply overflow-x-hidden;
+}
+
 button {
   appearance: none;
 }
