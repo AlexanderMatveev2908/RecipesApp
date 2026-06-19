@@ -1,9 +1,9 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
-import { ImgLoading } from '@/common/components/general/img_loading/img-loading';
+import { HomeSectionOne } from './sections/home_section_one/home-section-one';
 
 @Component({
   selector: 'app-home-page',
-  imports: [ImgLoading],
+  imports: [HomeSectionOne],
   templateUrl: './home-page.html',
   styleUrl: './home-page.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,

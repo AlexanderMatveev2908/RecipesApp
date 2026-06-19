@@ -1,0 +1,39 @@
+.root {
+  @apply flex flex-col justify-center items-center;
+
+  .root__slogan {
+    @apply text-start tablet:text-center text-neutral__900;
+
+    .slogan__healthy {
+      @apply relative;
+
+      &::before {
+        @apply content-[''] absolute bottom-2 left-0 w-full h-2/5 bg-orange__500 opacity-50 rounded-[10px];
+      }
+    }
+  }
+
+  .root__description {
+    @apply text-neutral__600 mt-[16px];
+  }
+
+  .root__explore {
+    @apply flex w-full justify-start tablet:justify-center items-center mt-[32px];
+
+    > a {
+      @apply bg-neutral__900 px-[32px] py-[16px] rounded-[10px];
+    }
+  }
+
+  .root__img {
+    @apply relative mt-[40px];
+
+    .img__wrapper {
+      @apply w-[345px] h-[230px] rounded-[10px] border-[4px] border-white overflow-hidden;
+    }
+
+    .img__bg_svg {
+      @apply absolute w-[630px] h-[518px] -top-1/2 -left-1/4 -z-50;
+    }
+  }
+}
