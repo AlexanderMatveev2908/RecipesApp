@@ -35,12 +35,8 @@ html {
   @apply bg-[#FAF9F9];
 }
 
-body {
-  @apply overflow-x-hidden;
-}
-
 .app__page {
-  @apply mt-[72px] px-[16px] py-[48px] bg-neutral__100;
+  @apply mt-[72px] px-[16px] pt-[48px] bg-neutral__100;
 }
 
 button {

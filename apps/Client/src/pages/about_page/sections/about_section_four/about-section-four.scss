@@ -1,1 +1,25 @@
-.root{}
+.root {
+  @apply flex flex-col gap-[32px];
+
+  .root__texts {
+    @apply flex flex-col gap-[20px] items-center justify-center;
+
+    .texts__paragraphs {
+      @apply flex flex-col gap-[12px];
+
+      .paragraphs__points {
+        .points__item {
+          @apply flex gap-[10px];
+        }
+      }
+    }
+  }
+
+  .root__img {
+    @apply flex justify-center;
+
+    .img__wrapper {
+      @apply w-[343px] h-[180px] overflow-hidden rounded-[10px];
+    }
+  }
+}

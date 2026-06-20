@@ -29,11 +29,11 @@
     @apply relative mt-[40px];
 
     .img__wrapper {
-      @apply w-[345px] h-[230px] rounded-[10px] border-[4px] border-white overflow-hidden;
+      @apply relative w-[345px] h-[230px] rounded-[10px] border-[4px] border-white overflow-hidden z-20;
     }
 
     .img__bg_svg {
-      @apply absolute w-[630px] h-[518px] -top-1/2 -left-1/4 -z-50;
+      @apply absolute w-[630px] h-[518px] -top-1/2 -left-1/4 z-10;
     }
   }
 }

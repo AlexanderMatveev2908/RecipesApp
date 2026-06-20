@@ -1,5 +1,5 @@
 .root {
-  @apply pb-[20px] flex flex-col gap-[32px] bg-neutral__100 px-[16px];
+  @apply pt-[64px] pb-[20px] flex flex-col gap-[32px] bg-neutral__100 px-[16px];
 
   .root__adv {
     @apply w-full py-[48px] flex flex-col gap-[32px] items-center justify-center bg-neutral__200 rounded-[10px];
