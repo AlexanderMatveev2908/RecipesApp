@@ -1,0 +1,27 @@
+<div class="root">
+  <div class="root__texts">
+    <span class="txt__5 text-neutral__900">Beyond the plate</span>
+
+    <div class="texts__paragraphs">
+      <span class="txt__8 text-neutral__600"
+        >We believe food is a catalyst for community and well-being. By sharing approachable
+        recipes, we hope to:</span
+      >
+
+      <div class="paragraphs__points">
+        @for (item of AboutSectionFourData.data; track item.id) {
+          <div class="points__item txt__8 text-neutral__600">
+            <span>•</span>
+            <span>{{ item.description }}</span>
+          </div>
+        }
+      </div>
+    </div>
+  </div>
+
+  <div class="root__img">
+    <div class="img__wrapper">
+      <app-img-loading src="/images/family_laugh.png" />
+    </div>
+  </div>
+</div>
