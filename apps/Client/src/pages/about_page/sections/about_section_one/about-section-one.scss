@@ -1,0 +1,26 @@
+.root {
+  @apply flex flex-col gap-[40px];
+
+  .root__texts {
+    @apply flex flex-col gap-[24px];
+
+    .texts__mission {
+      @apply flex justify-start items-center;
+
+      .mission__btn {
+        @apply bg-orange__500 py-[2px] px-[6px] rounded-[6px];
+      }
+    }
+
+    .texts__paragraphs {
+      @apply flex flex-col gap-[16px] items-center justify-center;
+    }
+  }
+
+  .root__img {
+    @apply flex justify-center;
+    .img__wrapper {
+      @apply rounded-[10px] overflow-hidden w-[343px] h-[343px];
+    }
+  }
+}
