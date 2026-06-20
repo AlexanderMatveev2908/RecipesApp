@@ -1,3 +1,21 @@
 <div class="root">
-  <p>AboutSectionTwo generated 🎉</p>
+  <span class="txt__5 text-neutral__900">Why we exist</span>
+
+  <div class="root__points">
+    @for (item of AboutSectionTwoData.data; track item.id) {
+      <div class="points__item">
+        <div class="item__svg">
+          <ng-container *ngComponentOutlet="SvgRight" />
+        </div>
+
+        <div class="item__data">
+          <span class="txt__7 text-neutral__900">{{ item.title }}</span>
+
+          <span class="txt__8 text-neutral__600">
+            {{ item.description }}
+          </span>
+        </div>
+      </div>
+    }
+  </div>
 </div>

@@ -1,1 +1,19 @@
-.root{}
+.root {
+  @apply pt-[48px] pb-[64px] flex flex-col gap-[48px];
+
+  .root__points {
+    @apply flex flex-col gap-[24px];
+
+    .points__item {
+      @apply flex gap-[20px] items-start;
+
+      .item__svg {
+        @apply min-w-[24px] max-w-[24px] min-h-[24px] max-h-[24px] mt-1;
+      }
+
+      .item__data {
+        @apply flex flex-col gap-[12px];
+      }
+    }
+  }
+}
