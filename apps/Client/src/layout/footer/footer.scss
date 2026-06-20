@@ -1,0 +1,11 @@
+.root {
+  @apply pt-[32px] pb-[20px] flex flex-col gap-[24px] bg-neutral__100;
+
+  .root__svgs {
+    @apply flex justify-center items-center gap-[24px];
+
+    .svgs__wrapper {
+      @apply w-[22px] h-[22px];
+    }
+  }
+}
