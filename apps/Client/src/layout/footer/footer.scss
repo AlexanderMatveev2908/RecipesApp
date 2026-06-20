@@ -1,11 +1,27 @@
 .root {
-  @apply pt-[32px] pb-[20px] flex flex-col gap-[24px] bg-neutral__100;
+  @apply pb-[20px] flex flex-col gap-[32px] bg-neutral__100 px-[16px];
 
-  .root__svgs {
-    @apply flex justify-center items-center gap-[24px];
+  .root__adv {
+    @apply w-full py-[48px] flex flex-col gap-[32px] items-center justify-center bg-neutral__200 rounded-[10px];
 
-    .svgs__wrapper {
-      @apply w-[22px] h-[22px];
+    .adv__texts {
+      @apply flex flex-col gap-[12px] justify-center items-center text-center;
+    }
+
+    .adv__browse {
+      @apply px-[24px] py-[16px] bg-neutral__900 text-white rounded-[10px];
+    }
+  }
+
+  .root__bottom {
+    @apply flex flex-col justify-center items-center gap-[24px];
+
+    .bottom__svgs {
+      @apply flex justify-center items-center gap-[24px];
+
+      .svgs__wrapper {
+        @apply w-[22px] h-[22px];
+      }
     }
   }
 }

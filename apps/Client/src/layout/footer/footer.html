@@ -1,15 +1,31 @@
 <div class="root">
-  <div class="root__svgs">
-    <div class="svgs__wrapper">
-      <ng-container *ngComponentOutlet="SvgButterfly" />
+  <div class="root__adv">
+    <div class="adv__texts">
+      <span class="txt__5 text-neutral__900">Ready to cook smarter?</span>
+
+      <span class="txt__8 text-neutral__600"
+        >Hit the button, pick a recipe, and get dinner on the table—fast.</span
+      >
     </div>
-    <div class="svgs__wrapper">
-      <ng-container *ngComponentOutlet="SvgInsta" />
-    </div>
-    <div class="svgs__wrapper">
-      <ng-container *ngComponentOutlet="SvgTikTok" />
-    </div>
+
+    <a class="adv__browse">
+      <span class="txt__8">Browse recipes</span>
+    </a>
   </div>
 
-  <span class="txt__8 text-center">Made with ❤️ and 🥑</span>
+  <div class="root__bottom">
+    <div class="bottom__svgs">
+      <div class="svgs__wrapper">
+        <ng-container *ngComponentOutlet="SvgButterfly" />
+      </div>
+      <div class="svgs__wrapper">
+        <ng-container *ngComponentOutlet="SvgInsta" />
+      </div>
+      <div class="svgs__wrapper">
+        <ng-container *ngComponentOutlet="SvgTikTok" />
+      </div>
+    </div>
+
+    <span class="txt__8 text-center">Made with ❤️ and 🥑</span>
+  </div>
 </div>
