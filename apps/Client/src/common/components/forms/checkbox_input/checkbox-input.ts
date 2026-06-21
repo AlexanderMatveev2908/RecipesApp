@@ -59,6 +59,13 @@ export class CheckboxInput extends UseFormFieldDir implements OnInit {
     return curr.includes(optVal);
   }
 
+  public clear() {
+    this.ctrl().markAsDirty();
+    this.ctrl().markAsTouched();
+
+    this.ctrl().setValue([]);
+  }
+
   @HostListener('document:click', ['$event'])
   public closeDropOnOut(e: MouseEvent): void {
     const target = e.target as Node;
