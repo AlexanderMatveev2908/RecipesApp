@@ -29,5 +29,13 @@
         }
       }
     }
+
+    .item__browse {
+      @apply flex w-full;
+
+      a {
+        @apply w-full flex justify-center text-white bg-neutral__900 py-[12px] rounded-full;
+      }
+    }
   }
 }
