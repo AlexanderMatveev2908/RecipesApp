@@ -1,0 +1,7 @@
+.root {
+  @apply flex flex-col;
+
+  .root__texts {
+    @apply flex flex-col pb-[48px] gap-[12px];
+  }
+}
