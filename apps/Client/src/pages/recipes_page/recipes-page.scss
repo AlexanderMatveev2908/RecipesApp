@@ -1,7 +1,10 @@
 .root {
-  @apply flex flex-col;
+  @apply flex flex-col gap-[24px];
 
-  .root__texts {
-    @apply flex flex-col pb-[48px] gap-[12px];
+  .root__up {
+    @apply flex flex-col gap-[12px];
+    .up__texts {
+      @apply flex flex-col pb-[48px] gap-[12px];
+    }
   }
 }
