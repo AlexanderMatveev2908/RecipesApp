@@ -1,13 +1,14 @@
 import { RecipeT } from '@/common/types/recipes';
 import { createReducer, on } from '@ngrx/store';
 import { RecipesActT } from './actions';
+import { RecipesUiFct } from '@/pages/recipes_page/ui_fct';
 
 export interface RecipesStateT {
   recipes: RecipeT[];
 }
 
 const initState: RecipesStateT = {
-  recipes: [],
+  recipes: [...RecipesUiFct.data],
 };
 
 export const recipesReducer = createReducer(

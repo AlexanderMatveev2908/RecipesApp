@@ -1,10 +1,13 @@
 .root {
-  @apply flex flex-col gap-[32px];
+  .root__link {
+    @apply flex justify-start items-center gap-[2px];
+  }
 
   .root__item {
-    @apply p-2 flex flex-col justify-center items-center gap-[16px] bg-white;
+    @apply mt-[16px];
 
     .item__img {
+      @apply flex justify-center;
       .img__wrapper {
         @apply w-[350px] h-[350px] rounded-[10px] overflow-hidden;
       }
@@ -27,14 +30,6 @@
         .row__data {
           @apply flex;
         }
-      }
-    }
-
-    .item__browse {
-      @apply flex w-full;
-
-      a {
-        @apply w-full flex justify-center text-white bg-neutral__900 py-[12px] rounded-full;
       }
     }
   }

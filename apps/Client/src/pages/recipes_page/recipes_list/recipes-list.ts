@@ -5,10 +5,11 @@ import { SvgAdvTimer } from '@/common/components/svgs/advanced/timer/timer';
 import { SvgAdvUser } from '@/common/components/svgs/advanced/user/user';
 import { NgComponentOutlet } from '@angular/common';
 import { RecipesSlice } from '@/features/recipes/slice';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-recipes-list',
-  imports: [ImgLoading, NgComponentOutlet],
+  imports: [ImgLoading, NgComponentOutlet, RouterLink],
   templateUrl: './recipes-list.html',
   styleUrl: './recipes-list.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
