@@ -20,4 +20,10 @@
       @apply flex justify-start items-center gap-[5px];
     }
   }
+
+  .root__err {
+    span {
+      @apply text-lg text-red-600;
+    }
+  }
 }

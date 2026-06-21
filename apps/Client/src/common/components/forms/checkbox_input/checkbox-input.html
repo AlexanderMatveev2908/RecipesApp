@@ -1,5 +1,5 @@
 <div class="root">
-  <button (click)="toggleDrop()" type="button" class="root__btn">
+  <button #btnRef (click)="toggleDrop()" type="button" class="root__btn">
     <div class="btn__label">
       <span class="txt__8 text-neutral__900">Max Prep Time</span>
       <div class="label__svg">
@@ -9,13 +9,17 @@
   </button>
 
   @if (isDrop()) {
-    <div class="root__drop">
+    <div #dropRef class="root__drop">
       @for (opt of optionsCheckbox(); track opt.id) {
-        <div class="drop__item">
-          <input type="checkbox" />
+        <button type="button" (click)="handleClick(opt.val)" class="drop__item">
+          <input type="checkbox" [checked]="isChecked(opt.val)" />
           <span class="txt__8 text-neutral__600">{{ opt.label }}</span>
-        </div>
+        </button>
       }
     </div>
   }
+
+  <div class="field__err">
+    <span>{{ errMsg() }}</span>
+  </div>
 </div>
