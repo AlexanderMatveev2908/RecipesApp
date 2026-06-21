@@ -18,3 +18,9 @@ export interface FormFieldT {
   label: string;
   type: string;
 }
+
+export type OptionCheckboxT = {
+  label: string;
+  val: string;
+  id: string;
+};

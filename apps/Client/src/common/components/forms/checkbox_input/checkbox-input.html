@@ -1,0 +1,21 @@
+<div class="root">
+  <button (click)="toggleDrop()" type="button" class="root__btn">
+    <div class="btn__label">
+      <span class="txt__8 text-neutral__900">Max Prep Time</span>
+      <div class="label__svg">
+        <ng-container *ngComponentOutlet="SvgDown" />
+      </div>
+    </div>
+  </button>
+
+  @if (isDrop()) {
+    <div class="root__drop">
+      @for (opt of optionsCheckbox(); track opt.id) {
+        <div class="drop__item">
+          <input type="checkbox" />
+          <span class="txt__8 text-neutral__600">{{ opt.label }}</span>
+        </div>
+      }
+    </div>
+  }
+</div>
