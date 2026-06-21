@@ -1,0 +1,41 @@
+.root {
+  @apply flex flex-col gap-[32px];
+
+  .root__item {
+    @apply p-2 flex flex-col justify-center items-center gap-[16px] bg-white;
+
+    .item__img {
+      .img__wrapper {
+        @apply rounded-[10px] overflow-hidden;
+      }
+    }
+
+    .item__texts {
+      @apply flex flex-col gap-[10px];
+    }
+
+    .item__info {
+      @apply grid grid-cols-2 w-full gap-y-[10px];
+
+      .info__row {
+        @apply flex gap-[15px] w-full;
+
+        .row__svg {
+          @apply w-[20px] h-[20px];
+        }
+
+        .row__data {
+          @apply flex;
+        }
+      }
+    }
+
+    .item__browse {
+      @apply flex w-full;
+
+      a {
+        @apply w-full flex justify-center text-white bg-neutral__900 py-[12px] rounded-full;
+      }
+    }
+  }
+}

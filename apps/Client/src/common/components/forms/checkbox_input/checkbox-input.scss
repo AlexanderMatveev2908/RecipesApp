@@ -1,0 +1,29 @@
+.root {
+  @apply relative;
+
+  .root__btn {
+    @apply w-full bg-white py-[10px] px-[50px] rounded-[10px] border-2 border-gray-200;
+
+    .btn__label {
+      @apply flex justify-center items-center gap-[15px];
+
+      .label__svg {
+        @apply w-[20px] h-[20px];
+      }
+    }
+  }
+
+  .root__drop {
+    @apply absolute top-full left-0 bg-white z-20 p-[10px] rounded-[10px] w-full;
+
+    .drop__item {
+      @apply flex justify-start items-center gap-[5px];
+    }
+  }
+
+  .root__err {
+    span {
+      @apply text-lg text-red-600;
+    }
+  }
+}

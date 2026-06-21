@@ -1,0 +1,55 @@
+<div class="root">
+  @for (item of RecipesUiFct.data; track item.id) {
+    <div class="root__item">
+      <div class="item__img">
+        <div class="img__wrapper">
+          <app-img-loading [src]="item.img" />
+        </div>
+      </div>
+
+      <div class="item__texts">
+        <span class="txt__8 text-neutral__900">{{ item.name }}</span>
+
+        <span class="txt__9 text-neutral__600">{{ item.description }}</span>
+      </div>
+
+      <div class="item__info">
+        <div class="info__row">
+          <div class="row__svg">
+            <ng-container *ngComponentOutlet="SvgFood" />
+          </div>
+          <div class="row__data">
+            <span class="">Servings:</span>
+            <span>&nbsp;{{ item.servings }}</span>
+          </div>
+        </div>
+
+        <div class="info__row">
+          <div class="row__svg">
+            <ng-container *ngComponentOutlet="SvgTimer" />
+          </div>
+          <div class="row__data">
+            <span class="">Prep:</span>
+            <span>&nbsp;{{ item.prep }} Mins</span>
+          </div>
+        </div>
+
+        <div class="info__row">
+          <div class="row__svg">
+            <ng-container *ngComponentOutlet="SvgFood" />
+          </div>
+          <div class="row__data">
+            <span class="">Cook:</span>
+            <span>&nbsp;{{ item.cook }} Mins</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="item__browse">
+        <a>
+          <span> View Recipe </span>
+        </a>
+      </div>
+    </div>
+  }
+</div>
