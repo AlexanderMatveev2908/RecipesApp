@@ -1,10 +1,10 @@
-import { ChangeDetectionStrategy, Component } from '@angular/core';
-import { RecipesUiFct } from '../ui_fct';
+import { ChangeDetectionStrategy, Component, inject } from '@angular/core';
 import { ImgLoading } from '@/common/components/general/img_loading/img-loading';
 import { SvgAdvFood } from '@/common/components/svgs/advanced/food/food';
 import { SvgAdvTimer } from '@/common/components/svgs/advanced/timer/timer';
 import { SvgAdvUser } from '@/common/components/svgs/advanced/user/user';
 import { NgComponentOutlet } from '@angular/common';
+import { RecipesSlice } from '@/features/recipes/slice';
 
 @Component({
   selector: 'app-recipes-list',
@@ -14,7 +14,7 @@ import { NgComponentOutlet } from '@angular/common';
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class RecipesList {
-  public readonly RecipesUiFct = RecipesUiFct;
+  public readonly recipesSlice: RecipesSlice = inject(RecipesSlice);
 
   public readonly SvgFood = SvgAdvFood;
   public readonly SvgTimer = SvgAdvTimer;

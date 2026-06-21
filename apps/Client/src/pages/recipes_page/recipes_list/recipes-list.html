@@ -1,5 +1,5 @@
 <div class="root">
-  @for (item of RecipesUiFct.data; track item.id) {
+  @for (item of recipesSlice.recipes(); track item.id) {
     <div class="root__item">
       <div class="item__img">
         <div class="img__wrapper">
