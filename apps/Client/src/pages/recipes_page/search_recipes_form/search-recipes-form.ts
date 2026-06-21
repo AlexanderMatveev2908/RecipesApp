@@ -4,10 +4,11 @@ import { CheckboxInput } from '@/common/components/forms/checkbox_input/checkbox
 import { SearchRecipesUiFct } from './ui_fct';
 import { SearchRecipesFormMng } from './paperwork';
 import { UseFormAppDir } from '@/core/directives/use_form_app';
+import { TxtInput } from '@/common/components/forms/txt_input/txt-input';
 
 @Component({
   selector: 'app-search-recipes-form',
-  imports: [ReactiveFormsModule, CheckboxInput],
+  imports: [ReactiveFormsModule, CheckboxInput, TxtInput],
   templateUrl: './search-recipes-form.html',
   styleUrl: './search-recipes-form.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,

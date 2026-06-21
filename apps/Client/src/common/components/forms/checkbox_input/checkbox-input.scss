@@ -2,7 +2,7 @@
   @apply relative;
 
   .root__btn {
-    @apply w-full bg-white py-[10px] px-[50px] rounded-[10px];
+    @apply w-full bg-white py-[10px] px-[50px] rounded-[10px] border-2 border-gray-200;
 
     .btn__label {
       @apply flex justify-center items-center gap-[15px];

@@ -1,4 +1,4 @@
-import { OptionCheckboxT } from '@/common/types/dom';
+import { FormFieldT, OptionCheckboxT } from '@/common/types/dom';
 import { v4 } from 'uuid';
 
 export class SearchRecipesUiFct {
@@ -13,4 +13,10 @@ export class SearchRecipesUiFct {
     val: String(time),
     label: `${time} Minutes`,
   }));
+
+  public static readonly searchField: FormFieldT = {
+    label: 'Search by name or ingredient…',
+    name: 'nameDish',
+    type: 'text',
+  };
 }
