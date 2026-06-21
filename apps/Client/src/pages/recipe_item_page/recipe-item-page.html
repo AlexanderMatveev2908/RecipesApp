@@ -48,5 +48,37 @@
         </div>
       </div>
     </div>
+
+    <div class="item__ing">
+      <span class="text-neutral__900 txt__7">Ingredients:</span>
+
+      <div class="ing__list">
+        @for (item of recipe()?.ingredients; track item.id) {
+          <div class="list__item">
+            <div class="item__svg">
+              <ng-container *ngComponentOutlet="SvgRight" />
+            </div>
+
+            <span>{{ item.ingredient }}</span>
+          </div>
+        }
+      </div>
+    </div>
+
+    <div class="item__inst">
+      <span class="text-neutral__900 txt__7">Instructions:</span>
+
+      <div class="inst__list">
+        @for (item of recipe()?.instructions; track item.id) {
+          <div class="list__item">
+            <div class="item__svg">
+              <ng-container *ngComponentOutlet="SvgRight" />
+            </div>
+
+            <span>{{ item.instruction }}</span>
+          </div>
+        }
+      </div>
+    </div>
   </div>
 </div>

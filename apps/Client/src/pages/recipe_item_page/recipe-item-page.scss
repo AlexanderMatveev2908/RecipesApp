@@ -4,7 +4,7 @@
   }
 
   .root__item {
-    @apply mt-[16px];
+    @apply mt-[16px] flex flex-col gap-[16px];
 
     .item__img {
       @apply flex justify-center;
@@ -29,6 +29,24 @@
 
         .row__data {
           @apply flex;
+        }
+      }
+    }
+
+    .item__ing,
+    .item__inst {
+      @apply flex flex-col gap-[16px];
+
+      .ing__list,
+      .inst__list {
+        @apply flex flex-col gap-[8px];
+
+        .list__item {
+          @apply flex items-center justify-start gap-[10px];
+
+          .item__svg {
+            @apply max-w-[20px] max-h-[20px] min-w-[20px] min-h-[20px];
+          }
         }
       }
     }

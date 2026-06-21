@@ -15,6 +15,7 @@ import {
 } from '@angular/core';
 import { ImgLoading } from '@/common/components/general/img_loading/img-loading';
 import { NgComponentOutlet } from '@angular/common';
+import { SvgAdvArrowRight } from '@/common/components/svgs/advanced/arrow_right/arrow-right';
 
 @Component({
   selector: 'app-recipe-item-page',
@@ -39,4 +40,5 @@ export class RecipeItemPage {
   public readonly SvgFood = SvgAdvFood;
   public readonly SvgTimer = SvgAdvTimer;
   public readonly SvgUser = SvgAdvUser;
+  public readonly SvgRight = SvgAdvArrowRight;
 }
