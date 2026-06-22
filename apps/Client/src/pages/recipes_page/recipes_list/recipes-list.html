@@ -46,7 +46,7 @@
       </div>
 
       <div class="item__browse">
-        <a [routerLink]="`/recipes/${item.id}`">
+        <a [routerLink]="['/recipes', item.id]">
           <span> View Recipe </span>
         </a>
       </div>
