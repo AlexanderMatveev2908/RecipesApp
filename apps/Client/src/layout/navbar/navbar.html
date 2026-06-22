@@ -24,9 +24,9 @@
     }
   </div>
 
-  <button class="root__browse">
+  <a [routerLink]="'/recipes'" class="root__browse">
     <span class="txt__8">Browse Recipes</span>
-  </button>
+  </a>
 
   @if (isDrop()) {
     <div #dropRef class="root__drop">
@@ -36,9 +36,9 @@
         }}</a>
       }
 
-      <button class="drop__browse">
+      <a (click)="toggleDrop()" [routerLink]="'/recipes'" class="drop__browse">
         <span class="txt__8">Browse Recipes</span>
-      </button>
+      </a>
     </div>
   }
 </div>
